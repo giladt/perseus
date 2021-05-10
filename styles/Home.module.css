@@ -73,9 +73,19 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
   max-width: 800px;
-  margin-top: 3rem;
+  overflow-x: auto;
+  box-shadow: 0 0 10px 0 gray;
+  border-radius: 1em;
+
+}
+.episodes {
+  margin-top: 2em;
+  max-width: 95vw;
+  flex: 1 250px;
+  overflow-x: none;
+  flex-wrap: wrap;
+  height: 100%;
 }
 
 .card {
@@ -87,7 +97,9 @@
   border: 1px solid #eaeaea;
   border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
-  width: 45%;
+  flex: 1;
+  text-align: center;
+  cursor: pointer;
 }
 
 .card:hover,
@@ -109,13 +121,13 @@
 }
 
 .logo {
-  height: 1em;
+  height: 3em;
   margin-left: 0.5rem;
 }
 
 @media (max-width: 600px) {
   .grid {
     width: 100%;
-    flex-direction: column;
+    /* flex-direction: column; */
   }
 }
